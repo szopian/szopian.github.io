@@ -11,7 +11,7 @@ function show() {
 }
 
 function close() {
-  mainMenu.style.top = "-110%";
+  mainMenu.style.top = "-120%";
 }
 
 openMenu.addEventListener("click", show);
