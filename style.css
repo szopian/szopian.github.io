@@ -24,6 +24,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
+  z-index: 1;
 }
 
 nav {
@@ -159,7 +160,6 @@ h5 {
   box-shadow: 0 6px 18px 0 #45a29e;
   transition: 0.3s;
   width: 400px;
-  height: 350px;
   text-align: center;
   color: #c5c6c7;
   background: linear-gradient(#0b0c10, #1f2833);
@@ -167,11 +167,21 @@ h5 {
   padding: 10px;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .project__img {
   float: left;
   width: 100%;
-  height: 85%;
+  height: 300px;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.project__img:hover {
+  transform: scale(1.3);
 }
 
 .project__links {
@@ -188,7 +198,7 @@ h5 {
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 6px 16px;
   font-size: 1.2rem;
 }
 
@@ -209,7 +219,7 @@ h5 {
   .project__img {
     float: left;
     width: 100%;
-    height: 75%;
+    height: 150px;
     object-fit: cover;
   }
 }
