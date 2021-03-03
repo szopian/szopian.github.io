@@ -309,7 +309,6 @@ i:hover {
     background: linear-gradient(#0b0c10, #66fcf1);
     transition: top 1s ease;
     display: none;
-    padding-bottom: 50%;
   }
 
   .hero {
