@@ -390,6 +390,24 @@ i:hover {
     color: #66fcf1;
   }
 
+  .fa-bars {
+    font-size: 40px;
+    color: #1f2833;
+  }
+
+  .fa-bars:hover {
+    font-size: 40px;
+  }
+
+  .fa-times {
+    font-size: 40px;
+    color: #c5c6c7;
+  }
+
+  .fa-times:hover {
+    font-size: 40px;
+  }
+
   .footer__nav {
     position: relative;
     position: block;
