@@ -271,11 +271,14 @@ i {
   color: #45a29e;
   font-size: 75px;
   margin-bottom: 15px;
+  transform: scale(1);
+  transition: 0.2s;
 }
 
 i:hover {
-  font-size: 65px;
+  /* font-size: 65px; */
   color: #66fcf1;
+  transform: scale(1) translateY(-15px);
 }
 
 /* FOOTER */
@@ -386,7 +389,6 @@ i:hover {
   }
 
   i:hover {
-    font-size: 55px;
     color: #66fcf1;
   }
 
