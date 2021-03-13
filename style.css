@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
+:root {
+  --color-1st: #66fcf1;
+  --color-2nd: #45a29e;
+  --color-3rd: #c5c6c7;
+  --color-4th: #1f2833;
+  --color-5th: #100b0f;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +20,7 @@ html {
 }
 
 body {
-  background-color: #0b0c10;
+  background-color: var(--color-5th);
   display: block;
   justify-content: center;
   align-items: center;
@@ -20,11 +28,13 @@ body {
 }
 
 header {
-  background: linear-gradient(#0b0c10, #1f2833);
+  background: linear-gradient(var(--color-5th), var(--color-4th));
   justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
   z-index: 1;
+  transition-property: top;
+  transition-duration: 2s;
 }
 
 nav {
@@ -36,6 +46,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  transition-property: top;
+  transition-duration: 2s;
 }
 
 .hero {
@@ -49,12 +61,12 @@ nav {
 }
 
 h1 {
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 h5 {
   padding-bottom: 50px;
-  color: #c5c6c7;
+  color: var(--color-3rd);
 }
 
 .logo {
@@ -75,12 +87,12 @@ h5 {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
-  color: #c5c6c7;
+  color: var(--color-3rd);
   font-size: 1.5rem;
 }
 
 .nav__links li a:hover {
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 .open__menu {
@@ -92,7 +104,7 @@ h5 {
 
 .fa-bars {
   font-size: 40px;
-  color: #1f2833;
+  color: var(--color-4th);
 }
 
 .fa-bars:hover {
@@ -101,7 +113,7 @@ h5 {
 
 .fa-times {
   font-size: 40px;
-  color: #c5c6c7;
+  color: var(--color-3rd);
 }
 
 .fa-times:hover {
@@ -126,21 +138,21 @@ h5 {
 /* SECTIONS */
 .section {
   padding: 15rem 3rem;
-  border-top: 0.5px solid #1f2833;
+  border-top: 0.5px solid var(--color-4th);
   transition: transform 1s, opacity 1s;
 }
 
 .section__title {
   max-width: 80rem;
   margin: 0 auto 8rem auto;
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 .section__description {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #c5c6c7;
+  color: var(--color-3rd);
   margin-bottom: 1rem;
 }
 
@@ -175,12 +187,12 @@ h5 {
 }
 
 .card {
-  box-shadow: 0 6px 18px 0 #45a29e;
+  box-shadow: 0 6px 18px 0 var(--color-2nd);
   transition: 0.3s;
   width: 400px;
   text-align: center;
   color: #c5c6c7;
-  background: linear-gradient(#0b0c10, #1f2833);
+  background: linear-gradient(var(--color-5th), var(--color-4th));
   border-radius: 5px 5px 5px 5px;
   padding: 10px;
 }
@@ -204,15 +216,15 @@ h5 {
 
 .project__links {
   text-decoration: none;
-  color: #45a29e;
+  color: var(--color-2nd);
 }
 
 .project__links:hover {
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 .card:hover {
-  box-shadow: 0 12px 36px 0 #66fcf1;
+  box-shadow: 0 12px 36px 0 var(--color-1st);
 }
 
 .container {
@@ -259,16 +271,16 @@ h5 {
 }
 
 .links {
-  color: #1f2833;
+  color: var(--color-4th);
   text-decoration: none;
 }
 
 .links:hover {
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 i {
-  color: #45a29e;
+  color: var(--color-2nd);
   font-size: 75px;
   margin-bottom: 15px;
   transform: scale(1);
@@ -277,14 +289,14 @@ i {
 
 i:hover {
   /* font-size: 65px; */
-  color: #66fcf1;
+  color: var(--color-1st);
   transform: scale(1) translateY(-15px);
 }
 
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;
-  background: linear-gradient(#1f2833, #0b0c10);
+  background: linear-gradient(var(--color-4th), var(--color-5th));
 }
 
 .footer__nav {
@@ -295,7 +307,7 @@ i:hover {
 }
 
 .footer__nav a:hover {
-  color: #66fcf1;
+  color: var(--color-1st);
 }
 
 .footer__item {
@@ -304,7 +316,7 @@ i:hover {
 
 .footer__link {
   font-size: 1.6rem;
-  color: #c5c6c7;
+  color: var(--color-3rd);
   text-decoration: none;
 }
 
@@ -327,7 +339,7 @@ i:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#0b0c10, #66fcf1);
+    background: linear-gradient(var(--color-5th), var(--color-1st));
     transition: top 1s ease;
     display: none;
   }
@@ -345,13 +357,13 @@ i:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #c5c6c7;
+    color: var(--color-3rd);
     margin: 6px;
   }
 
   .nav__links .close__menu:hover {
     background: none;
-    color: #66fcf1;
+    color: var(--color-1st);
   }
 
   .open__menu {
@@ -361,7 +373,7 @@ i:hover {
   .nav__links li a:hover {
     background: none;
     font-size: 1.7rem;
-    color: #45a29e;
+    color: var(--color-2nd);
   }
 
   .column {
@@ -389,12 +401,12 @@ i:hover {
   }
 
   i:hover {
-    color: #66fcf1;
+    color: var(--color-1st);
   }
 
   .fa-bars {
     font-size: 40px;
-    color: #1f2833;
+    color: var(--color-4th);
   }
 
   .fa-bars:hover {
@@ -403,7 +415,7 @@ i:hover {
 
   .fa-times {
     font-size: 40px;
-    color: #c5c6c7;
+    color: var(--color-3rd);
   }
 
   .fa-times:hover {
