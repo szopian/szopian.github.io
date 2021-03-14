@@ -279,7 +279,7 @@ h5 {
   color: var(--color-1st);
 }
 
-i {
+.links i {
   color: var(--color-2nd);
   font-size: 75px;
   margin-bottom: 15px;
@@ -287,7 +287,7 @@ i {
   transition: 0.2s;
 }
 
-i:hover {
+.links i:hover {
   /* font-size: 65px; */
   color: var(--color-1st);
   transform: scale(1) translateY(-15px);
