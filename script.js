@@ -1,9 +1,6 @@
 let mainMenu = document.querySelector(".nav__links");
-console.log("mainMenu: ", mainMenu);
 let closeMenu = document.querySelector(".close__menu");
-console.log("closeMenu: ", closeMenu);
 let openMenu = document.querySelector(".open__menu");
-console.log("openMenu: ", openMenu);
 
 function show() {
   mainMenu.style.display = "flex";
@@ -28,7 +25,7 @@ const sectionHero = document.querySelector(".hero");
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
 
   if (!entry.isIntersecting) navbar.classList.add("sticky");
   else navbar.classList.remove("sticky");

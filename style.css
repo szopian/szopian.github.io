@@ -6,6 +6,8 @@
   --color-3rd: #c5c6c7;
   --color-4th: #1f2833;
   --color-5th: #100b0f;
+  --shadow: 0.3px 0.3px 2px rgb(65, 179, 179, 0.2),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -102,22 +104,24 @@ h5 {
   cursor: pointer;
 }
 
-.fa-bars {
+i.fas.fa-bars {
   font-size: 40px;
   color: var(--color-4th);
+  text-shadow: var(--shadow);
 }
 
-.fa-bars:hover {
-  font-size: 40px;
+i.fas.fa-bars:hover {
+  color: var(--color-1st);
 }
 
-.fa-times {
+i.fas.fa-times {
   font-size: 40px;
   color: var(--color-3rd);
+  text-shadow: var(--shadow);
 }
 
-.fa-times:hover {
-  font-size: 40px;
+i.fas.fa-times:hover {
+  color: var(--color-1st);
 }
 
 .nav__links .close__menu {
@@ -288,7 +292,6 @@ h5 {
 }
 
 .links i:hover {
-  /* font-size: 65px; */
   color: var(--color-1st);
   transform: scale(1) translateY(-15px);
 }
