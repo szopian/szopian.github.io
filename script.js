@@ -1,14 +1,17 @@
 let mainMenu = document.querySelector(".nav__links");
 let closeMenu = document.querySelector(".close__menu");
 let openMenu = document.querySelector(".open__menu");
+let openMenuLogo = document.querySelector("#logo_2");
 
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0px";
+  openMenuLogo.classList.remove("hidden");
 }
 
 function close() {
   mainMenu.style.top = "-120%";
+  openMenuLogo.classList.add("hidden");
 }
 
 openMenu.addEventListener("click", show);
