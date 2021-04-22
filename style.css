@@ -353,7 +353,7 @@ i.fas.fa-times:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 824px) {
   .nav__links {
     height: 100vh;
     position: fixed;
