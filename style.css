@@ -84,7 +84,7 @@ h5 {
 }
 
 .nav__links li a {
-  transition: all 0.3 ease 0s;
+  transition: all 0.3s ease 0s;
   display: inline-block;
   padding: 15px;
   text-decoration: none;
@@ -102,6 +102,7 @@ h5 {
   display: none;
   cursor: pointer;
   outline: none;
+  transition: all 0.3s ease 0s;
 }
 
 .open__menu_logo {
@@ -329,6 +330,7 @@ i.fas.fa-times:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+  transition: all 0.5s ease 0s;
 }
 
 .footer__nav a:hover {
