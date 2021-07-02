@@ -330,7 +330,6 @@ i.fas.fa-times:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
-  transition: all 0.5s ease 0s;
 }
 
 .footer__nav a:hover {
@@ -345,6 +344,7 @@ i.fas.fa-times:hover {
   font-size: 1.6rem;
   color: var(--color-3rd);
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 
 .footer__logo {
