@@ -102,7 +102,6 @@ h5 {
   display: none;
   cursor: pointer;
   outline: none;
-  transition: all 0.3s ease 0s;
 }
 
 .open__menu_logo {
@@ -397,9 +396,14 @@ i.fas.fa-times:hover {
     display: block;
   }
 
+  .nav__links li a {
+    transition: all 0.5s ease 0s;
+  }
+
   .nav__links li a:hover {
     background: none;
     font-size: 1.7rem;
+    letter-spacing: 0.5px;
     color: var(--color-2nd);
   }
 
