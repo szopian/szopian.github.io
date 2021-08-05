@@ -48,8 +48,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  transition-property: top;
-  transition-duration: 2s;
 }
 
 .hero {
@@ -125,6 +123,7 @@ i.fas.fa-bars {
   font-size: 40px;
   color: var(--color-4th);
   text-shadow: var(--shadow);
+  transition: 0.4s ease 0s;
 }
 
 i.fas.fa-bars:hover {
@@ -138,6 +137,7 @@ i.fas.fa-times {
   color: var(--color-3rd);
   text-shadow: 2px 2px 2px rgb(12, 11, 11, 0.5),
     -2px -2px 2px rgb(34, 219, 210, 0.5);
+  transition: 0.4s ease 0s;
 }
 
 i.fas.fa-times:hover {
@@ -300,6 +300,7 @@ i.fas.fa-times:hover {
 .links {
   color: var(--color-4th);
   text-decoration: none;
+  transition: 0.3s ease 0s;
 }
 
 .links:hover {
@@ -311,7 +312,7 @@ i.fas.fa-times:hover {
   font-size: 75px;
   margin-bottom: 15px;
   transform: scale(1);
-  transition: 0.2s;
+  transition: 0.3s ease 0s;
 }
 
 .links i:hover {
