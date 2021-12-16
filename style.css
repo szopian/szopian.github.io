@@ -301,6 +301,7 @@ i.fas.fa-times:hover {
   color: var(--color-4th);
   text-decoration: none;
   transition: 0.3s ease 0s;
+  letter-spacing: 0.5px;
 }
 
 .links:hover {
