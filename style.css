@@ -7,6 +7,8 @@
   --color-4th: #1f2833;
   --color-5th: #100b0f;
   --shadow: 1px 1px 1px rgb(65, 179, 179, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.4);
+  --text-shadow: 2px 2px 2px rgb(12, 11, 11, 0.5),
+    -2px -2px 2px rgb(34, 219, 210, 0.5);
 }
 
 * {
@@ -135,8 +137,7 @@ i.fas.fa-bars:hover {
 i.fas.fa-times {
   font-size: 40px;
   color: var(--color-3rd);
-  text-shadow: 2px 2px 2px rgb(12, 11, 11, 0.5),
-    -2px -2px 2px rgb(34, 219, 210, 0.5);
+  text-shadow: var(--text-shadow);
   transition: 0.4s ease 0s;
 }
 
