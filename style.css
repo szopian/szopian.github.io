@@ -217,7 +217,7 @@ i.fas.fa-times:hover {
 .card {
   box-shadow: 0 6px 18px 0 var(--color-2nd);
   transition: 0.3s;
-  width: 400px;
+  width: 370px;
   text-align: center;
   color: #c5c6c7;
   background: linear-gradient(var(--color-5th), var(--color-4th));
@@ -414,9 +414,7 @@ i.fas.fa-times:hover {
   .column {
     display: flex;
     align-items: center;
-    text-align: center;
     flex-direction: column;
-    margin-bottom: 50px;
   }
 
   .row {
