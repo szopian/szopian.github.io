@@ -22,13 +22,11 @@ particlesJS.load("particles-js", "particles.json", function () {
   console.log("particles loaded...");
 });
 
-// sticky navbar
 const navbar = document.querySelector("header");
 const sectionHero = document.querySelector(".hero");
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  // console.log(entry);
 
   if (!entry.isIntersecting) navbar.classList.add("sticky");
   else navbar.classList.remove("sticky");

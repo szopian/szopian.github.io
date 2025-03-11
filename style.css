@@ -75,7 +75,6 @@ h5 {
   cursor: pointer;
   margin: 10px 15px 15px 10px;
   max-height: 45px;
-  min-width: 35px;
   max-width: 45px;
 }
 
@@ -163,7 +162,6 @@ i.fas.fa-times:hover {
   size: cover;
 }
 
-/* SECTIONS */
 .section {
   padding: 15rem 3rem;
   border-top: 0.5px solid var(--color-4th);
@@ -190,17 +188,15 @@ i.fas.fa-times:hover {
   font-weight: 500;
 }
 
-/* Card projects */
 .column {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-gap: 5rem;
   margin: 1.5rem auto;
   align-items: center;
@@ -217,7 +213,7 @@ i.fas.fa-times:hover {
 .card {
   box-shadow: 0 6px 18px 0 var(--color-2nd);
   transition: 0.3s;
-  width: 370px;
+  max-width: 370px;
   text-align: center;
   color: #c5c6c7;
   background: linear-gradient(var(--color-5th), var(--color-4th));
@@ -260,29 +256,6 @@ i.fas.fa-times:hover {
   font-size: 1.2rem;
 }
 
-@media (max-width: 430px) {
-  .row {
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-  .card {
-    width: 220px;
-    height: 220px;
-  }
-  .container {
-    font-size: 0.8rem;
-  }
-
-  .project__img {
-    float: left;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-}
-
-/* CONTACT */
 .contacts__list {
   display: flex;
   justify-content: center;
@@ -322,7 +295,6 @@ i.fas.fa-times:hover {
   transform: scale(1) translateY(-15px);
 }
 
-/* FOOTER */
 .footer {
   padding: 10rem 3rem;
   background: linear-gradient(var(--color-4th), var(--color-5th));
@@ -358,7 +330,16 @@ i.fas.fa-times:hover {
   cursor: pointer;
 }
 
-@media (max-width: 824px) {
+@media (max-width: 768px) {
+  .section {
+    padding: 8rem 1.5rem;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
   .nav__links {
     height: 100vh;
     position: fixed;
@@ -409,12 +390,6 @@ i.fas.fa-times:hover {
     font-size: 1.7rem;
     letter-spacing: 0.5px;
     color: var(--color-2nd);
-  }
-
-  .column {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
   }
 
   .row {
@@ -479,4 +454,4 @@ i.fas.fa-times:hover {
     max-height: 45px;
     max-width: 60px;
   }
-}
+} 
