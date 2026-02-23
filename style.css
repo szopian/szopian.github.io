@@ -225,19 +225,13 @@ i.fas.fa-times:hover {
   transform: translate(-6px, 8px);
   text-shadow: -1px 1px 2px var(--color-2nd);
 }
-.column {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  grid-gap: 5rem;
+  grid-gap: 1rem;
   margin: 1.5rem auto;
   align-items: center;
-  text-align: center;
   flex-direction: column;
 }
 
@@ -250,12 +244,10 @@ i.fas.fa-times:hover {
 .card {
   box-shadow: 0 6px 18px 0 var(--color-2nd);
   transition: 0.3s;
-  max-width: 370px;
-  text-align: center;
   color: #c5c6c7;
   background: linear-gradient(var(--color-5th), var(--color-4th));
   border-radius: 5px 5px 5px 5px;
-  padding: 10px;
+  padding: 4px;
 }
 
 .overflow {
