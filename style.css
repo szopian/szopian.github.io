@@ -325,8 +325,11 @@ i.fas.fa-times:hover {
 }
 
 .footer {
-  padding: 10rem 3rem;
+  padding: 6rem 3rem;
   background: linear-gradient(var(--color-4th), var(--color-5th));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer__nav {
