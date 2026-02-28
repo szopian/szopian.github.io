@@ -488,4 +488,7 @@ i.fas.fa-times:hover {
     margin-right: 0;
     margin-bottom: 0.5rem;
   }
+  .footer{
+    height: 92vh;
+  }
 } 
