@@ -109,6 +109,10 @@ function renderProjects() {
     const card = createProjectCard(project);
     row.appendChild(card);
   });
+
+  //add year for footer
+  const year = new Date().getFullYear();
+  document.querySelector('.js_year').textContent = year;
 }
 
 // Ensure the DOM is fully loaded before rendering
@@ -149,3 +153,4 @@ const heroObserver = new IntersectionObserver(stickyNav, {
 });
 
 heroObserver.observe(sectionHero);
+
