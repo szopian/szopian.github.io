@@ -211,11 +211,11 @@ i.fas.fa-times:hover {
   font-size: 22px;
   font-weight: 900;
   padding: 16px 20px;
-  color: var(--color-1nd);
+  color: var(--color-1st);
   text-shadow: -10px 10px 5px var(--color-2nd);
   transition: 2s;
   text-decoration: none;
-  cursor: context-menu;
+  cursor: pointer;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.4px;
