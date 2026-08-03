@@ -5,19 +5,19 @@ let openMenuLogo = document.querySelector("#logo_2");
 
 const projects = [
    {
-    title: 'Community Cloud | Website',
+    title: 'Experience Cloud | Website',
     link: 'https://www.party.tools/s/',
     imgSrc: 'images/partytools.png',
     displayText: 'www.party.tools/s/',
   },
   {
-    title: 'Community Cloud | Website',
+    title: 'Experience Cloud | Website',
     link: 'https://post.letters-to-santa.co.uk/s/',
     imgSrc: 'images/ltsanta.png',
     displayText: 'letters-to-santa.co.uk/s/',
   },
   {
-    title: 'Community Cloud | LWC',
+    title: 'Experience Cloud | LWC',
     link: 'https://szopiandemo-dev-ed.develop.my.site.com/',
     imgSrc: 'images/commPage2.png',
     displayText: 'szopiandemo-dev',
